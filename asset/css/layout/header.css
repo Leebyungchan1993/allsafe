@@ -1,0 +1,8 @@
+#header{width:100%; max-width:500px; min-width:360px; margin:0 auto;}
+header > .header-bg{width: 100%; background: #fff;}
+header > .header-bg .top-menu {padding: 0 !important; height:50px; line-height:50px; position:relative;}
+header > .header-bg .top-menu a{}
+header > .header-bg .top-menu a i{}
+header > .header-bg .top-menu i img{width:100%; display:block;}
+#header .header-bg .top-menu h1{display:inline-block; padding-left:20px;}
+

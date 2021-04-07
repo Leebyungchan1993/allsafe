@@ -1,0 +1,24 @@
+#wrap{width:100%; height:100%;}
+#wrap .wrap-box{max-width:720px; min-width:360px; width:100%; margin:0 auto;}
+#wrap .wrap-box .login-box{width:100%; padding:89px 20px 50px 20px; box-sizing:border-box;}
+
+.h-logo-box h1, .email-wrap h1, .font-box h1{width:80%; margin:0 auto;}
+.email-wrap h1 a, .font-box h1 a{width:100%;}
+.h-logo-box h1 img, .email-wrap h1 a img, .font-box h1 a img{display:block; width:100%;}
+
+.login-wrap .password-view-contorl-btn {width:27px; height:20px;}
+.login-wrap .password-view-contorl-btn.show-pw {background-image: url('../../img/common/button/visibility-black-48-dp.png');}
+.login-wrap .password-view-contorl-btn.hide-pw {background-image: url('../../img/common/button/visibility-off-black-48-dp.png');}
+
+.join-pw-find{}
+.join-pw-find li{border-right:1px solid #d9d9d9;}
+.join-pw-find li:last-child{border:none;}
+
+.icon-box ul li a{width:100%; display:block;}
+.icon-box ul li:first-child a{}
+.icon-box ul li a .img-circle{position:relative; border-radius:50%; width:50px; height:50px; border:1px solid #bababa;}
+.icon-box ul li a .img-circle img{position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); display:block;}
+.icon-box ul li a .img-circle .kakao-img{width:32px; height:30px;}
+.icon-box ul li a .img-circle .naver-img{width:21px; height:20px;}
+
+.icon-box ul li a p{line-height:auto;}

@@ -1,0 +1,4 @@
+.content-box {border-bottom:1px solid #d9d9d9;}
+.content-box a .flex-box{display:flex; justify-content:center; align-items: center; padding:20px;}
+.content-box a .flex-box .img-box img{width:100%; max-width:80px;}
+.content-box a .flex-box ul li{line-height:1.4;}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Layout</title>
+
+    <!-- 공통 CSS -->
+    <!-- 공통 CSS -->
+    <link rel="stylesheet" href="/asset/css/common/reset.css" rel="stylesheet">
+    <link rel="stylesheet" href="/asset/css/common/button.css" rel="stylesheet">
+    <link rel="stylesheet" href="/asset/css/common/common.css" rel="stylesheet">
+    <link rel="stylesheet" href="/asset/css/common/layout.css" rel="stylesheet">
+    <link rel="stylesheet" href="/asset/css/common/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/asset/css/layout/header.css" rel="stylesheet">
+    <link rel="stylesheet" href="/asset/css/layout/join.css" rel="stylesheet">
+
+    <!-- 공통 JS -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/asset/js/layout/join-form.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header id="header">
+        <div class="text-center">
+            <p class="f-size24 f-medium c-blue padding35">회원가입</p>
+        </div>
+    </header>
+    <!-- header -->
+
+     <!-- main -->
+     <section class="container">
+        <div class="wrapper d-m-standard oy-auto d-h-full">
+            <form class="mt-20">
+                <div class="d-flex d-flex-wrap">
+                    <input type="text" placeholder="이메일 주소 ( 아이디로 사용 )" class="d-w-full pl-20 pr-20 mb-20">
+                    <a class="btn btn-blue c-white d-w-full text-center mb-20">이메일 인증</a>
+                    <input type="text" placeholder="닉네임" class="d-w-full pl-20 pr-20 mb-20">
+                    <div class="d-flex position-relative d-w-full">
+                        <input type="password" placeholder="비밀번호" class="d-w-full pr-40 pl-20 pw-input">
+                        <span
+                            class="password-view-contorl-btn show-pw btn position-absolute position-r15 mt-15 d-none"></span>
+                        <span class="password-view-contorl-btn hide-pw btn position-absolute position-r15 mt-15"></span>
+                    </div>
+                </div>
+                <div class="form-foot-box">
+                    <div class="d-flex d-flex-ai agree-box d-w-full mb-10">
+                        <span class="f-size16 c-deebblue">전체 동의</span>
+                        <input type="checkbox" class="custom-type02 all-checked">
+                    </div>
+                    <div class="d-flex d-flex-ai agree-box d-w-full f-size16 f-regular mb-10">
+                        <span>서비스 이용약관에 동의</span>
+                        <input type="checkbox" class="custom-type02 agree-checkbox">
+                    </div>
+                    <div class="d-flex d-flex-ai agree-box d-w-full f-size16 f-regular mb-10">
+                        <span>개인정보 수집 및 이용에 동의</span>
+                        <input type="checkbox" class="custom-type02 agree-checkbox">
+                    </div>
+                    <div class="d-flex d-flex-ai agree-box d-w-full f-size16 f-regular">
+                        <span>위치정보 이용 약관에 동의</span>
+                        <input type="checkbox" class="custom-type02 agree-checkbox">
+                    </div>
+                </div>
+                    <a class="btn btn-blue d-w-full text-center mb-20">회원가입</a>
+            </form>
+        </div>
+        <!-- footer -->
+        <footer id="footer">
+        </footer>
+        <!-- footer -->
+    </section>
+    <!-- main -->
+</body>
+
+</html>

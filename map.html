@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map</title>
+
+    <!-- 공통 CSS -->
+    <link rel="stylesheet" href="/asset/css/common/reset.css" rel="stylesheet">
+    <link rel="stylesheet" href="/asset/css/common/button.css" rel="stylesheet">
+    <link rel="stylesheet" href="/asset/css/common/common.css" rel="stylesheet">
+    <link rel="stylesheet" href="/asset/css/common/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/asset/css/common/layout.css" rel="stylesheet">
+    <link rel="stylesheet" href="/asset/css/layout/header.css" rel="stylesheet">
+    <link rel="stylesheet" href="/asset/css/layout/map.css" rel="stylesheet">
+
+    <!-- 공통 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=cepzmtgzvl">
+    </script>
+
+    <script src="/asset/js/layout/gnb.js"></script>
+    <script src="/asset/js/layout/wish.js"></script>
+
+</head>
+
+<body>
+    <!-- header -->
+    <header id="header">
+        <div class="header-bg">
+
+            <div class="top-menu d-w bg-blue">
+                <a class="menu-opener gnb-open btn f-size18 pl-20">
+                    <i><img src="/asset/img/common/button/toggle.png" alt="toggle" style="width:20px; height:20px;"></i>
+                </a>
+                <h1 class="f-size20 f-medium c-white text-center">방역업체 찾기</h1>
+            </div>
+
+            <div class="search-box d-w-full position-relative bg-white">
+                <input type="text" class="d-w-full pl-20" placeholder="주소를 입력하세요">
+
+                <i class="searchbtn btn position-absolute"><img src="/asset/img/common/button/search.png"
+                        alt="search"></i>
+
+                <div class="list-wrap position-absolute">
+                    <span class="list-close-btn btn"><img src="/asset/img/common/button/search-close.png"
+                            alt="close"></span>
+                    <a class="list-btn">리스트 보기</a>
+                </div>
+            </div>
+
+
+            <div class="search-detail-wrap">
+                <div class="search-detail-box">
+                    <ul>
+                        <li class="select-box">
+                            <select name="" id="">
+                                <option value="" name="" disabled>시도 선택</option>
+                                <option value="" name="">서울시</option>
+                                <option value="" name=""></option>
+                                <option value="" name=""></option>
+                            </select>
+                        </li>
+                        <li class="select-box">
+                            <select name="" id="">
+                                <option value="" name="">시군구 선택</option>
+                                <option value="" name="">강동구</option>
+                                <option value="" name=""></option>
+                                <option value="" name=""></option>
+                            </select>
+                        </li>
+                        <li><a class="find-btn">검색</a></li>
+                        <li><a class="return-map-btn position-relative">지도<br>보기</a></li>
+                    </ul>
+                </div>
+                <div class="filter-wrap d-w-full">
+                    <div class="filter-box">
+                        <select name="" id="">
+                            <option value="" name="">거리순</option>
+                            <option value="" name="">최신순</option>
+                            <option value="" name="">11111111111</option>
+                            <option value="" name="">22222222222</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="content-list-wrap d-w-full d-h-full">
+                    <div class="content-box d-w-full">
+                        <a href="#;" class="d-flex">
+                            <div class="flex-box d-flex d-flex-wrap">
+                                <div class="img-box pr-10">
+                                    <img src="/asset/img/layout/list-img.png" alt="">
+                                </div>
+
+                                <ul>
+                                    <li>소독·구충·방제서비스</li>
+                                    <li class="f-size18 c-blue f-bold">한국보건방역협회</li>
+                                    <li class="f-size10">서울특별시 금천구 서부샛길 606</li>
+                                    <li class="f-size10">대성디폴리스지식산업센터 B동 2610호</li>
+                                    <li class="f-size12">나와의 거리<span class="f-bold f-size12 pl-10 c-blue">1km</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                        <input type="checkbox" id="wish">
+                        <label for="wish" class="wish-btn"></label>
+                    </div>
+
+                    <div class="content-list-wrap d-w-full d-h-full">
+                        <div class="content-box d-w-full">
+                            <a href="#;" class="d-flex">
+                                <div class="flex-box d-flex d-flex-wrap">
+                                    <div class="img-box pr-10">
+                                        <img src="/asset/img/layout/list-img.png" alt="">
+                                    </div>
+
+                                    <ul>
+                                        <li>소독·구충·방제서비스</li>
+                                        <li class="f-size18 c-blue f-bold">한국보건방역협회</li>
+                                        <li class="f-size10">서울특별시 금천구 서부샛길 606</li>
+                                        <li class="f-size10">대성디폴리스지식산업센터 B동 2610호</li>
+                                        <li class="f-size12">나와의 거리<span class="f-bold f-size12 pl-10 c-blue">1km</span>
+                                        </li>
+                                    </ul>
+                                    <button class="wish-btn"></button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script>
+            $(document).ready(function () {
+                $('.searchbtn ').click(function () {
+                    $('.list-wrap').css('display', 'block');
+                });
+                $('.list-wrap').click(function () {
+                    $(this).css('display', 'none');
+                    $('.search-detail-wrap').css('display', 'block');
+                    $('.search-box').css('display', 'none');
+                })
+
+                $('.return-map-btn').click(function () {
+                    $('.search-detail-wrap').css('display', 'none');
+                    $('.search-box').css('display', 'block');
+                })
+            });
+        </script>
+    </header>
+    <!-- header -->
+
+    <!-- gnb -->
+    <div class="mobile-gnb-wrap d-p-standard position-absolute position-t0 position-l0 d-h-full">
+        <div class="mobile-gnb-mask gnb-close position-absolute position-t0 position-l0 d-h-full d-w-full btn"></div>
+        <div class="gnb">
+            <article class="pt-20 pb-20 pl-20 f-size16 position-relative mb-60">
+                <p><span>tideflo</span> 님 안녕하세요</p>
+                <a class="btn position-absolute close-x gnb-close"></a>
+            </article>
+
+            <ul class="menu-type1">
+                <li class="group-title c-blue f-size16 f-medium">로그아웃
+                    <i><img src="/asset/img/common/button/gnb-right-btn.png" alt=""></i>
+                </li>
+                <li class="group-title c-blue f-size16 f-medium">내 정보 수정
+                    <i><img src="/asset/img/common/button/gnb-right-btn.png" alt=""></i>
+                </li>
+                <li class="group-title c-blue f-size16 f-medium">방역업체 찾기
+                    <i><img src="/asset/img/common/button/gnb-right-btn.png" alt=""></i>
+                </li>
+                <li class="group-title c-blue f-size16 f-medium">공지사항
+                    <i><img src="/asset/img/common/button/gnb-right-btn.png" alt=""></i>
+                </li>
+                <li class="group-title c-blue f-size16 f-medium">FAQ
+                    <i><img src="/asset/img/common/button/gnb-right-btn.png" alt=""></i>
+                </li>
+                <li class="group-title c-blue f-size16 f-medium">고객문의
+                    <i><img src="/asset/img/common/button/gnb-right-btn.png" alt=""></i>
+                </li>
+            </ul>
+
+            <div class="gnb-address mt-20 mb-30 pl-30">
+                <span></span>
+                <p><span class="pr-10" style="border-right:1px solid #d9d9d9">주식회사 타이드플로</span><span class="pl-10">대표 :
+                        차명건</span></p>
+                <p><span>서울특별시 금천구 가산동 517-4 3F 304</span></p>
+                <p><span>사업자등록번호 111-11-11111</span></p>
+                <p><span>고객문의 modoo@modoo.com</span></p>
+            </div>
+
+            <div class="gnb-footer-box text-center f-size12">
+                <p>이용약관</p>
+                <p>개인정보처리방침</p>
+                <p>위치정보이용약관</p>
+            </div>
+        </div>
+    </div>
+    <!-- gnb -->
+    <main>
+        <div class="map-wrap d-w-full">
+            <div class="map-body-wrap">
+                <div id="map"></div>
+            </div>
+        </div>
+    </main>
+
+
+    <script>
+        var position = new naver.maps.LatLng(37.3595704, 127.105399);
+
+        var map = new naver.maps.Map('map', {
+            center: position,
+            zoom: 15
+        });
+
+        var marker = new naver.maps.Marker({
+            position: position,
+            map: map
+        });
+
+        naver.maps.Event.addListener(map, 'click', function (e) {
+            marker.setPosition(e.coord);
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+
+            $(".more-list").on("click", function () {
+                var target = $(this).parents(".nav-list-wrap").find(".more-nav-types");
+
+                if (target.css("display") == "none") {
+                    target.stop().show();
+                } else {
+                    target.stop().hide();
+                }
+            });
+
+        });
+    </script>
+</body>
+
+</html>

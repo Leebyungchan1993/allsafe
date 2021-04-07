@@ -1,0 +1,13 @@
+
+.wrapper .password-view-contorl-btn {width:27px; height:20px;}
+.wrapper .password-view-contorl-btn.show-pw {background-image: url(../../img/common/button/visibility-black-48-dp.png);}
+.wrapper .password-view-contorl-btn.hide-pw {background-image: url(../../img/common/button/visibility-off-black-48-dp.png);}
+
+.agree-box * {flex: 0 0 auto;}
+.agree-box .custom-checkbox02-wrap {margin-left:auto;}
+
+.form-foot-box{margin-top:30px;}
+
+.join-btn{box-sizing:border-box; height:50px; line-height:50px; position: absolute; bottom:0;}
+
+input[type="checkbox"]{display:none;}

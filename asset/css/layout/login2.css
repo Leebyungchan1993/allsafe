@@ -1,0 +1,15 @@
+header {display: none;}
+
+input::placeholder{color:#aeaeae;}
+
+.login-wrap {margin-top:-84px;}
+
+.login-wrap a.logo img {width:200px;}
+
+.login-wrap .password-view-contorl-btn {width:27px; height:20px;}
+.login-wrap .password-view-contorl-btn.show-pw {background-image: url('../../img/common/button/visibility-black-48-dp.png');}
+.login-wrap .password-view-contorl-btn.hide-pw {background-image: url('../../img/common/button/visibility-off-black-48-dp.png');}
+
+input[type=text], input[type=password]{
+    box-shadow: 0px 2px 6px 0px rgb(0 0 0 / 20%);
+}
