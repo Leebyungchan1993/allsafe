@@ -1,0 +1,4 @@
+main{height:calc(100% - 100px);}
+main .map-wrap{height:100%; max-width:500px; margin:0 auto;}
+main .map-wrap .map-body-wrap{height:100%;}
+main .map-wrap #map{height:100%;}
