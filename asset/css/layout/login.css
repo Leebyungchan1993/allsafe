@@ -3,7 +3,7 @@
 #wrap .wrap-box .login-box{width:100%; padding:89px 20px 50px 20px; box-sizing:border-box;}
 
 .h-logo-box h1, .email-wrap h1, .font-box h1{width:80%; margin:0 auto;}
-.email-wrap h1 a, .font-box h1 a{width:100%;}
+.email-wrap h1 a, .font-box h1 a{width:100%; height:auto;}
 .h-logo-box h1 img, .email-wrap h1 a img, .font-box h1 a img{display:block; width:100%;}
 
 .login-wrap .password-view-contorl-btn {width:27px; height:20px;}
