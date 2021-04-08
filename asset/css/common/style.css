@@ -48,8 +48,8 @@
 	src: url('../../font/OpenSans-SemiBold.ttf'); /*폰트 파일 주소*/
 }
 
-.card {background-color: #fff; box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2); border-radius: 5px;}
-.card-blue {background-color: #2f36bb; box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2); border-radius: 5px;}
+.card {background-color: #fff; box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);}
+.card-blue {background-color: #2f36bb; box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);}
 
 .text-overflow {overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
 .text-overflow-line2 {overflow: hidden; text-overflow: ellipsis; white-space: normal; word-wrap: break-word; display: -webkit-box !important; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
@@ -375,7 +375,7 @@ hr {margin-top: 20px; margin-bottom: 20px; background-color:#ececec; width: 100%
 hr.blue {background-color:#2f36bb;}
 hr.white {background-color:#fff; }
 
-.b-shadow{box-shadow:0 2px 6px rgba(0, 0, 0, .2); border-radius:5px;}
+.b-shadow{box-shadow:0 2px 6px rgba(0, 0, 0, .2);}
 .shadow0{box-shadow:none;}
 
 @media(max-width:699px) {

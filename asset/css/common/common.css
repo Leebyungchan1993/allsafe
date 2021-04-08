@@ -6,7 +6,7 @@ input::placeholder, textarea::placeholder {color:#d2d2d2; word-break: keep-all;}
 
 input{box-sizing:border-box;}
 input[type=text], input[type=password] {border:none; box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, .2); height: 48px; font-size: 16px; vertical-align: top; font-family: 'NSG M' !important;}
-textarea {width:calc(100% - 46px); border:none; box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);  font-size: 16px; font-family: 'NSG M' !important; outline: none; resize: none; line-height: 24px; border-radius: 5px; min-height: 100px;}
+textarea {width:calc(100% - 46px); border:none; box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);  font-size: 16px; font-family: 'NSG M' !important; outline: none; resize: none; line-height: 24px; min-height: 100px;}
 
 a {text-decoration: none; color:#000;}
 a, span {display:inline-block;}
@@ -21,11 +21,13 @@ select{
     -webkit-appearance:none; /* Safari and Chrome */ 
     cursor:pointer;
     background:url('../../img/common/button/select-btn.png');
-    background-position:right center;
+    background-position:95% center;
     background-repeat: no-repeat;
     background-size:10px;
     margin:0;
-    padding:0 15px;
+    padding:0 10px;
+    border:none !important;
+    border-radius:none !important;
 }
 select::-ms-expand { display:none; } 
 select:focus{outline:none;}

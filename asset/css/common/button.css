@@ -2,6 +2,7 @@
 .btn-default {cursor: default;}
 .btn.default-cursor {cursor: default;}
 
+.btn-gray {background-color:#f4f4f4;; height:50px; line-height:50px; color:#fff; font-family: 'NSG R' !important; box-sizing:border-box; box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);}
 .btn-blue {background-color:#2f36bb; height:50px; line-height:50px; color:#fff; font-family: 'NSG R' !important; box-sizing:border-box; box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.2);}
 .btn-white {background-color:#fff; height:50px; line-height:50px; font-family: 'NSG B' !important; border-radius: 5px; box-shadow: 0px 2px 6px 0px #fff;}
 .btn-disabled {opacity: 0.3;}
