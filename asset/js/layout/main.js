@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('.searchbtn').click(function () {
+    $('.searchbtn').click(function (){
         $('.list-wrap').css('display', 'block');
         // $('.search-box').css('display','none');
     });
@@ -26,6 +26,10 @@ $(document).ready(function () {
         $('.modal-wrap').hide();
         $('.search-box').hide();
         $('.search-detail-wrap').show();
+    });
+
+    $('.alert-close-btn').click(function(){
+        $('.login-alert-wrap').css('display','none');
     });
 
 });

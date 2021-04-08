@@ -1,5 +1,20 @@
 html, body{height:100%; overflow:hidden;}
 
+.loader{
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:1000;
+    background:url('../../img/layout/loading.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:100%;
+}
+
 .list-view-wrap{z-index:200; background:#fff;}
 .list-view-wrap .list-view-box{}
 .list-view-wrap .list-view-box .list-box{}
@@ -46,8 +61,6 @@ html, body{height:100%; overflow:hidden;}
 .wish-btn{position:absolute; right:20px; top:20px; width:24px; height:20px; background:url('../../img/common/icon/wish-off.png'); background-size:100%;}
 .wish-btn.on{background:url('../../img/common/icon/wish-on.png'); background-size:100%;}
 
-
-
 .fix-map-btn{display:flex; align-self: flex-end;}
 
 main{height:calc(100% - 100px);}
@@ -70,8 +83,6 @@ main .map-wrap #map{height:100%;}
 .return-btn{max-width:500px; bottom:0;}
 .list-view-wrap .list-view-box .list-box .flex-box{position:relative; box-sizing: border-box;}
 
-.login-alert-wrap{position:fixed; display:flex; justify-content:center; width:100%; height:100%; top:0; left:0; bottom:0; right:0; background:red;
-    background:rgba(255, 255, 255 ,.6);
-}
-.login-alert-wrap .login-alert{padding:0;}
+.login-alert-wrap{position:fixed; display:flex; justify-content:center; width:100%; height:100%; top:0; left:0; bottom:0; right:0; background:rgba(255, 255, 255 ,.6);}
+.login-alert-wrap .login-alert{max-width:500px; padding:0;}
 .login-alert-wrap .login-alert ul li{width:50%; height:40px; line-height:40px;}

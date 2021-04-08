@@ -17,7 +17,8 @@
     <!-- 개별 CSS -->
     <link rel="stylesheet" href="/asset/css/layout/login.css" rel="stylesheet">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- 공통 JS -->
+    <script src="/asset/js/plugin/jquery.js"></script>
     <script src="/asset/js/layout/login.js"></script>
 </head>
 
@@ -34,20 +35,22 @@
 
                 <form action="">
                     <div class="login-wrap">
-                    <div class="id-box d-flex">
-                        <input type="text" class="d-w-full pr-40 pl-20 id-input" placeholder="아이디 ( 이메일 주소 )">
+                        <div class="id-box d-flex">
+                            <input type="text" class="d-w-full pr-40 pl-20 id-input" placeholder="아이디 ( 이메일 주소 )">
+                        </div>
+                        <div class="pw-box mt-20 d-flex position-relative">
+                            <input type="password" class="d-w-full pr-40 pl-20 pw-input" placeholder="비밀번호">
+                            <span
+                                class="password-view-contorl-btn show-pw btn position-absolute position-r15 mt-15 d-none"></span>
+                            <span
+                                class="password-view-contorl-btn hide-pw btn position-absolute position-r15 mt-15"></span>
+                        </div>
+                        <div class="custom-checkbox-wrap d-w-full mb-30 text-left">
+                            <input type="checkbox" id="login-check" class="custom-type01">
+                            <label class="btn" for="login-check">자동로그인</label>
+                            <span>자동로그인</span>
+                        </div>
                     </div>
-                    <div class="pw-box mt-20 d-flex position-relative">
-                        <input type="password" class="d-w-full pr-40 pl-20 pw-input" placeholder="비밀번호">
-                        <span class="password-view-contorl-btn show-pw btn position-absolute position-r15 mt-15 d-none"></span>
-                        <span class="password-view-contorl-btn hide-pw btn position-absolute position-r15 mt-15"></span>
-                    </div>
-                    <div class="custom-checkbox-wrap d-w-full mb-30 text-left">
-                        <input type="checkbox" id="login-check" class="custom-type01">
-                        <label class="btn" for="login-check">자동로그인</label>
-                        <span>자동로그인</span>
-                    </div>
-                </div>
                 </form>
 
                 <a class="go-login btn-disabled login-btn btn btn-blue d-p-standard c-white text-center mb-30">로그인</a>
