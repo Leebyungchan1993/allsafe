@@ -10,4 +10,23 @@
 
 .join-btn{box-sizing:border-box; height:50px; line-height:50px; position: absolute; bottom:0;}
 
-input[type="checkbox"]{display:none;}
+/* input[type="checkbox"]{display:none;} */
+
+.form-foot-box label {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('../../img/common/button/checkbtn-off.png');
+    background-size: 100%;
+}
+
+.form-foot-box input[type=checkbox]:checked + label {
+    background-image: url('../../img/common/button/checkbtn-on.png');
+}
+
+.form-foot-box input[type=checkbox]:checked + .all-checked{
+    background-image: url('../../img/common/button/allcheckbtn-on.png');
+}
+.form-foot-box{
+    margin-left:auto;
+}
