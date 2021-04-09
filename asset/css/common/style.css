@@ -375,7 +375,7 @@ hr {margin-top: 20px; margin-bottom: 20px; background-color:#ececec; width: 100%
 hr.blue {background-color:#2f36bb;}
 hr.white {background-color:#fff; }
 
-.b-shadow{box-shadow:0 2px 6px rgba(0, 0, 0, .2);}
+.b-shadow{box-shadow:0px 2px 6px 0px rgba(0, 0, 0, .2);}
 .shadow0{box-shadow:none;}
 
 @media(max-width:699px) {

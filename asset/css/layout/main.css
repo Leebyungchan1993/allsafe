@@ -14,10 +14,6 @@ html, body{height:100%; overflow:hidden;}
     background-position: center;
     background-size:cover;
 }
-
-.list-view-wrap{z-index:200; background:#fff;}
-.list-view-wrap .list-view-box .list-box .flex-box{position:relative; box-sizing: border-box;}
-
 .search-box{position:relative; border-radius:0; box-sizing:border-box; border:1px solid #2f36bb;}
 .search-box input[type="text"]{box-shadow: none;}
 .search-box .searchbtn{width:20px; height:20px; display:block; right:20px; top:25px; transform:translateY(-50%);}
@@ -86,3 +82,9 @@ position: absolute;
 .login-alert-wrap{position:fixed; display:flex; justify-content:center; width:100%; height:100%; top:0; left:0; bottom:0; right:0; background:rgba(255, 255, 255 ,.6);}
 .login-alert-wrap .login-alert{max-width:500px; padding:0;}
 .login-alert-wrap .login-alert ul li{width:50%; height:40px; line-height:40px;}
+
+
+.list-view-wrap{z-index:200; background:#fff;}
+.list-view-wrap .list-view-box .list-box .flex-box{position:relative; box-sizing: border-box;}
+.content-dec div p{width:20%;}
+.content-dec div span{width:80%; padding:10px;}

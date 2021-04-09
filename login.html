@@ -20,12 +20,68 @@
     <!-- 공통 JS -->
     <script src="/asset/js/plugin/jquery.js"></script>
     <script src="/asset/js/layout/login.js"></script>
+    <script src="/asset/js/layout/gnb.js"></script>
+
 </head>
 
 <body>
 
     <section class="container d-h-full">
         <div class="wrapper d-m-standard d-flex d-flex-jc d-flex-ai d-h-full position-relative">
+                <div class="login-top-menu">
+                    <a class="menu-opener gnb-open btn f-size18">
+                        <i class="btn"><img src="/asset/img/common/button/toggle-blue.png" alt="toggle"
+                                style="width:20px; height:20px;"></i>
+                    </a>
+                </div>
+
+                 <!-- gnb -->
+    <div class="mobile-gnb-wrap d-p-standard position-absolute position-t0 position-l0 d-h-full">
+        <div class="mobile-gnb-mask gnb-close position-absolute position-t0 position-l0 d-h-full d-w-full btn"></div>
+        <div class="gnb">
+            <article class="pt-20 pb-20 pl-20 f-size16 position-relative mb-60">
+                <p><span>tideflo</span> 님 안녕하세요</p>
+                <a class="btn position-absolute close-x gnb-close"></a>
+            </article>
+
+            <ul class="menu-type1">
+                <li class="group-title c-blue f-size16 f-medium"><a href="#;">로그아웃
+                    <i><img src="/asset/img/common/button/gnb-right-btn.png" alt=""></i>
+                </a></li>
+                <li class="group-title c-blue f-size16 f-medium"><a href="/myinfoedit.html">내 정보 수정
+                    <i><img src="/asset/img/common/button/gnb-right-btn.png" alt=""></i></a>
+                </li>
+                <li class="group-title c-blue f-size16 f-medium"><a href="/index.html">방역업체 찾기
+                    <i><img src="/asset/img/common/button/gnb-right-btn.png" alt=""></i></a>
+                </li>
+                <li class="group-title c-blue f-size16 f-medium"><a href="/notice.html">공지사항
+                    <i><img src="/asset/img/common/button/gnb-right-btn.png" alt=""></i></a>
+                </li>
+                <li class="group-title c-blue f-size16 f-medium"><a href="/faq.html">FAQ
+                    <i><img src="/asset/img/common/button/gnb-right-btn.png" alt=""></i></a>
+                </li>
+                <li class="group-title c-blue f-size16 f-medium"><a href="/inquiry.html">고객문의
+                    <i><img src="/asset/img/common/button/gnb-right-btn.png" alt=""></i></a>
+                </li>
+            </ul>
+
+            <div class="gnb-address mt-20 mb-30 pl-30">
+                <p><span class="pr-10" style="border-right:1px solid #d9d9d9">주식회사 타이드플로</span><span class="pl-10">대표 :
+                        차명건</span></p>
+                <p><span>서울특별시 금천구 가산동 517-4 3F 304</span></p>
+                <p><span>사업자등록번호 111-11-11111</span></p>
+                <p><span>고객문의 modoo@modoo.com</span></p>
+            </div>
+
+            <div class="gnb-footer-box text-center f-size14">
+                <p>이용약관</p>
+                <p>개인정보처리방침</p>
+                <p class="agree-last">위치정보이용약관</p>
+            </div>
+        </div>
+    </div>
+    <!-- gnb -->
+
             <div class="login-box text-center">
                 <div class="h-logo-box mb-30 d-flex d-flex-jc">
                     <h1>
@@ -36,10 +92,14 @@
                 <form action="">
                     <div class="login-wrap">
                         <div class="id-box d-flex">
+                            <div class="d-w-full b-shadow">
                             <input type="text" class="d-w-full pr-40 pl-20 id-input" placeholder="아이디 ( 이메일 주소 )">
                         </div>
+                        </div>
                         <div class="pw-box mt-20 d-flex position-relative">
+                            <div class="d-w-full b-shadow">
                             <input type="password" class="d-w-full pr-40 pl-20 pw-input" placeholder="비밀번호">
+                        </div>
                             <span
                                 class="password-view-contorl-btn show-pw btn position-absolute position-r15 mt-15 d-none"></span>
                             <span

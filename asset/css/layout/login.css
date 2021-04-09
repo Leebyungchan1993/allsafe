@@ -2,6 +2,8 @@
 #wrap .wrap-box{max-width:720px; min-width:360px; width:100%; margin:0 auto;}
 #wrap .wrap-box .login-box{width:100%; padding:89px 20px 50px 20px; box-sizing:border-box;}
 
+
+
 .h-logo-box h1, .email-wrap h1, .font-box h1{width:80%; margin:0 auto;}
 .email-wrap h1 a, .font-box h1 a{width:100%; height:auto;}
 .h-logo-box h1 img, .email-wrap h1 a img, .font-box h1 a img{display:block; width:100%;}
@@ -22,3 +24,5 @@
 .icon-box ul li a .img-circle .naver-img{width:21px; height:20px;}
 
 .icon-box ul li a p{line-height:auto;}
+
+.login-top-menu{position:absolute; left:20px; top:20px;}
