@@ -1,16 +1,16 @@
-
 .wrapper .password-view-contorl-btn {width:27px; height:20px;}
-.wrapper .password-view-contorl-btn.show-pw {background-image: url(../../img/common/button/visibility-black-48-dp.png);}
-.wrapper .password-view-contorl-btn.hide-pw {background-image: url(../../img/common/button/visibility-off-black-48-dp.png);}
+.wrapper .password-view-contorl-btn.show-pw {background-image: url('../../img/common/button/visibility-black-48-dp.png');}
+.wrapper .password-view-contorl-btn.hide-pw {background-image: url('../../img/common/button/visibility-off-black-48-dp.png');}
 
 .agree-box * {flex: 0 0 auto;}
 .agree-box .custom-checkbox02-wrap {margin-left:auto;}
 
 .form-foot-box{margin-top:30px;}
+.form-foot-box div{justify-content: space-between;}
 
 .join-btn{box-sizing:border-box; height:50px; line-height:50px; position: absolute; bottom:0;}
 
-/* input[type="checkbox"]{display:none;} */
+input[type="checkbox"]{display:none;}
 
 .form-foot-box label {
     display: inline-block;
@@ -20,13 +20,11 @@
     background-size: 100%;
 }
 
-.form-foot-box input[type=checkbox]:checked + label {
+
+.form-foot-box div:not(:first-child) input[type=checkbox]:checked + label {
     background-image: url('../../img/common/button/checkbtn-on.png');
 }
 
-.form-foot-box input[type=checkbox]:checked + .all-checked{
+.form-foot-box div:first-child input[type=checkbox]:checked + label {
     background-image: url('../../img/common/button/allcheckbtn-on.png');
-}
-.form-foot-box{
-    margin-left:auto;
 }

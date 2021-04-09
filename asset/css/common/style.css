@@ -175,7 +175,7 @@
 .d-flex-wrap {flex-wrap: wrap;}
 .d-flex-jc {justify-content: center;}
 .d-flex-ai {align-items: center;}
-.d-m-standard {width:500px; padding:0 20px; margin:auto; box-sizing:border-box;}
+.d-m-standard {width:500px; margin:auto; box-sizing:border-box;}
 .d-p-standard {width:500px; padding:0 calc((100% - 500px) / 2);}
 .d-h-full {height:100%;}
 .d-w-full {width:100%;}
