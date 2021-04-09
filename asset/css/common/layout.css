@@ -31,7 +31,7 @@ main{width: 100%; max-width: 500px; min-width: 360px; margin: 0 auto;}
 .mobile-gnb-wrap {z-index: 160; height: 100%; top: 0; left: 0; overflow: hidden;}
 .mobile-gnb-wrap .mobile-gnb-mask {background-color: rgba(0, 0, 0, 0.5);}
 
-.mobile-gnb-wrap .gnb {width:70%; max-width:500px; position: absolute; top:0; left:0; height:100%; overflow-y:auto; background-color: #fff; z-index: 2; display: flex; flex-direction: column;}
+.mobile-gnb-wrap .gnb {width:80%; max-width:500px; position: absolute; top:0; left:0; height:100%; overflow-y:auto; background-color: #fff; z-index: 2; display: flex; flex-direction: column;}
 .mobile-gnb-wrap .gnb .close-x {width: 20px; height: 20px; display: inline-block; background-image: url(../../img/common/button/close.png); background-size: 100%; right: 20px; top: 20px;}
 .mobile-gnb-wrap .gnb .menu-type1 {font-size: 0;
      /* overflow-y: auto; */
