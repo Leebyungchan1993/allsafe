@@ -1,5 +1,5 @@
 header > .header-bg{width:100%; background:#fff;}
-header > .header-bg .top-menu {padding: 0 !important; height: 60px;}
+header > .header-bg .top-menu {height: 60px; padding:0 20px;}
 header > .header-bg .top-menu .header-logo img {width:97px;}
 
 main{width: 100%; max-width: 500px; min-width: 360px; margin: 0 auto;}

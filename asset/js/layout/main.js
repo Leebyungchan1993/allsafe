@@ -1,35 +1,31 @@
 $(document).ready(function () {
-    $('.searchbtn').click(function (){
-        $('.list-wrap').css('display', 'block');
-        // $('.search-box').css('display','none');
-    });
-
-    $('.list-close-btn').click(function () {
-        $('.list-wrap').css('display', 'none');
-    });
-
-    $('.list-btn').click(function () {
-        $('.search-box').css('display', 'none');
-        $('.search-detail-wrap').css('display', 'block');
-    });
-
-    $('.return-map-btn').click(function(){
-        $('.search-detail-wrap').css('display', 'none');
-        $('.search-box').css('display', 'block');
-    });
 
     $('.wish-btn').click(function () {
-        $(this).toggleClass('on');
+        $(this).toggleClass('active');
     });
 
-    $('.modal-wrap > .modal-bg > .content-box').click(function(){
-        $('.modal-wrap').hide();
-        $('.search-box').hide();
-        $('.search-detail-wrap').show();
+    $('.alert-close-btn').click(function () {
+        $('.login-alert-wrap').css('display', 'none');
     });
 
-    $('.alert-close-btn').click(function(){
-        $('.login-alert-wrap').css('display','none');
+
+    $('.search-detail-box ul li .list-btn').click(function () {
+        $('.content-list-wrap').show();
     });
 
+    $('.search-detail-box ul li .map-btn').click(function () {
+        $('.content-list-wrap').hide();
+    });
+
+    $('.top-search-box > .top-search-btn').click(function () {
+        $('.top-menu-search-box > input').attr('placeholder', '').focus().attr('readonly', false).focusout().attr('placeholder', '방역업체 찾기');
+    });
+
+    $('.main-wish-box > i').click(function () {
+        $('.login-alert-wrap').css('display', 'flex');
+    });
+
+    $('.modal-bg').click(function () {
+        $('.modal-wrap').css('display', 'none');
+    });
 });
